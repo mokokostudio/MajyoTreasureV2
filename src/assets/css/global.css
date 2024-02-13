@@ -1,0 +1,39 @@
+html{
+  font-size: 37.5px;  /* 解决UC浏览，rem适配问题 https://www.cnblogs.com/chenrong/articles/4686601.html */
+}
+/* 提示框 */
+.showTooltip {
+  position: absolute;
+  /* 绝对定位 */
+  top: 45%;
+  left: 0;
+  width: 70%;
+  border-radius: 10px; /* 设置为10像素 */
+  /* height: 50px; */
+  background-color: #000000;
+  opacity: 0.8;
+  /* 初始化为透明色 */
+  z-index: 9999;
+  /* 设置z-index值，确保遮罩处于最前面 */
+  margin: 0 auto;
+  margin-left: 15%;
+}
+.tooltiptxt{
+  font-family: myFirstFont;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  color: #fff4d0;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.fade-leave-to {
+  transform: translateY(-50px);
+  opacity: 0;
+}
